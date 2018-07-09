@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGameInterfaces", "NumberGameInterfaces\NumberGameInterfaces.csproj", "{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGame", "NumberGame\NumberGame.csproj", "{3250BD44-5298-4895-A730-B3C82D11D431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGameTests", "NumberGameTests\NumberGameTests.csproj", "{CE43E9D7-B417-4465-B760-1527AB977B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGameConsole", "NumberGameConsole\NumberGameConsole.csproj", "{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3250BD44-5298-4895-A730-B3C82D11D431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3250BD44-5298-4895-A730-B3C82D11D431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3250BD44-5298-4895-A730-B3C82D11D431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3250BD44-5298-4895-A730-B3C82D11D431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE43E9D7-B417-4465-B760-1527AB977B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE43E9D7-B417-4465-B760-1527AB977B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE43E9D7-B417-4465-B760-1527AB977B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE43E9D7-B417-4465-B760-1527AB977B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
