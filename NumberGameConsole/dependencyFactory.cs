@@ -1,12 +1,11 @@
 ﻿using Unity;
-using NumberGame;
-using NumberGame.OutputHandlers;
-using NumberGame.NumberProviders;
-using NumberGame.NumberHandlers;
-using NumberGameInterfaces;
+using TKMW.NumberGame.OutputHandlers;
+using TKMW.NumberGame.NumberProviders;
+using TKMW.NumberGame.NumberHandlers;
+using TKMW.NumberGame.Interfaces;
 using Unity.Injection;
 
-namespace ActiveNavConsole
+namespace TKMW.NumberGame
 {
     public class DependencyFactory
     {

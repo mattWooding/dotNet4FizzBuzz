@@ -1,7 +1,7 @@
 ﻿using System;
-using NumberGameInterfaces;
+using TKMW.NumberGame.Interfaces;
 
-namespace NumberGame.OutputHandlers
+namespace TKMW.NumberGame.OutputHandlers
 {
     public class OutputHandlerConsole : IOutputHandler
     {

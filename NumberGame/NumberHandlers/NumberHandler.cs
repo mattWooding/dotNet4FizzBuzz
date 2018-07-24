@@ -1,7 +1,7 @@
 ﻿using System;
-using NumberGameInterfaces;
+using TKMW.NumberGame.Interfaces;
 
-namespace NumberGame.NumberHandlers
+namespace TKMW.NumberGame.NumberHandlers
 {
     public class NumberHandler : INumberHandler
     {

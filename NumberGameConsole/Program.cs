@@ -1,11 +1,11 @@
 ﻿using System;
-using NumberGameInterfaces;
-using NumberGame;
-using NumberGame.OutputHandlers;
-using NumberGame.NumberHandlers;
-using NumberGame.NumberProviders;
+using TKMW.NumberGame.Interfaces;
+using TKMW.NumberGame;
+using TKMW.NumberGame.OutputHandlers;
+using TKMW.NumberGame.NumberHandlers;
+using TKMW.NumberGame.NumberProviders;
 
-namespace ActiveNavConsole
+namespace TKMW.NumberGame
 {
     class MainClass
     {

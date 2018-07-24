@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NumberGameInterfaces
+namespace TKMW.NumberGame.Interfaces
 {
     public interface IOutputHandler
     {

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\NUnit.3.10.1\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CE43E9D7-B417-4465-B760-1527AB977B5D}</ProjectGuid>
+    <ProjectGuid>{3250BD44-5298-4895-A730-B3C82D11D431}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>NumberGameTests</RootNamespace>
-    <AssemblyName>NumberGameTests</AssemblyName>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -18,30 +17,34 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberHandlerTests.cs" />
-    <Compile Include="NumberProviderSequentialTests.cs" />
+    <Compile Include="numberGame.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NumberHandlers\NumberHandler.cs" />
+    <Compile Include="NumberProviders\NumberProviderSequential.cs" />
+    <Compile Include="OutputHandlers\OutputHandlerConsole.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Folder Include="NumberHandlers\" />
+    <Folder Include="NumberProviders\" />
+    <Folder Include="OutputHandlers\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NumberGame\NumberGame.csproj">
-      <Project>{3250BD44-5298-4895-A730-B3C82D11D431}</Project>
-      <Name>NumberGame</Name>
+    <ProjectReference Include="..\NumberGameInterfaces\TKMW.NumberGame.Interfaces.csproj">
+      <Project>{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}</Project>
+      <Name>TKMW.NumberGame.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

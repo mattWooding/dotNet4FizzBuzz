@@ -1,7 +1,7 @@
 ﻿using System;
-using NumberGameInterfaces;
+using TKMW.NumberGame.Interfaces;
 
-namespace NumberGame.NumberProviders
+namespace TKMW.NumberGame.NumberProviders
 {
     public class NumberProviderSequential : INumberProvider
     {

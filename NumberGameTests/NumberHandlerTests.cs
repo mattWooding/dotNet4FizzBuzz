@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
+using TKMW.NumberGame.NumberHandlers;
 
 namespace NewGameTests
 {
@@ -14,7 +15,7 @@ namespace NewGameTests
         public void TestFizz()
         {
             var expectedResult = "Fizz";
-            var nh = new NumberGame.NumberHandlers.NumberHandler();
+            var nh = new NumberHandler();
             var actualResult = nh.GetMessage(3);
             Assert.AreEqual(expectedResult, actualResult, "NumberHandler did not return Fizz when value passed was 3");
         }
@@ -26,7 +27,7 @@ namespace NewGameTests
         public void TestBuzz()
         {
             var expectedResult = "Buzz";
-            var nh = new NumberGame.NumberHandlers.NumberHandler();
+            var nh = new NumberHandler();
             var actualResult = nh.GetMessage(5);
             Assert.AreEqual(expectedResult, actualResult, "NumberHandler did not return Buzz when value passed was 5");
         }
@@ -38,7 +39,7 @@ namespace NewGameTests
         public void TestFizzBuzz()
         {
             var expectedResult = "FizzBuzz";
-            var nh = new NumberGame.NumberHandlers.NumberHandler();
+            var nh = new NumberHandler();
             var actualResult = nh.GetMessage(15);
             Assert.AreEqual(expectedResult, actualResult, "NumberHandler did not return FizzBuzz when value passed was 15");
         }
@@ -50,7 +51,7 @@ namespace NewGameTests
         public void Test1()
         {
             var expectedResult = "1";
-            var nh = new NumberGame.NumberHandlers.NumberHandler();
+            var nh = new NumberHandler();
             var actualResult = nh.GetMessage(1);
             Assert.AreEqual(expectedResult, actualResult, "NumberHandler did not return 1 when value passed was 1");
         }

@@ -60,17 +60,17 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NumberGame\NumberGame.csproj">
-      <Project>{3250BD44-5298-4895-A730-B3C82D11D431}</Project>
-      <Name>NumberGame</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NumberGameInterfaces\NumberGameInterfaces.csproj">
-      <Project>{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}</Project>
-      <Name>NumberGameInterfaces</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\NumberGameInterfaces\TKMW.NumberGame.Interfaces.csproj">
+      <Project>{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}</Project>
+      <Name>TKMW.NumberGame.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumberGame\TKMW.NumberGame.csproj">
+      <Project>{3250BD44-5298-4895-A730-B3C82D11D431}</Project>
+      <Name>TKMW.NumberGame</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

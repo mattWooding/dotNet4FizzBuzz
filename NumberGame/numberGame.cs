@@ -1,7 +1,7 @@
 ﻿using System;
-using NumberGameInterfaces;
+using TKMW.NumberGame.Interfaces;
 
-namespace NumberGame
+namespace TKMW.NumberGame
 {
     public class NumberGameMain : IGame
     {

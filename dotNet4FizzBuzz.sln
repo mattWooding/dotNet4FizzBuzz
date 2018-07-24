@@ -1,13 +1,13 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGameInterfaces", "NumberGameInterfaces\NumberGameInterfaces.csproj", "{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMW.NumberGame.Interfaces", "NumberGameInterfaces\TKMW.NumberGame.Interfaces.csproj", "{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGame", "NumberGame\NumberGame.csproj", "{3250BD44-5298-4895-A730-B3C82D11D431}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMW.NumberGame", "NumberGame\TKMW.NumberGame.csproj", "{3250BD44-5298-4895-A730-B3C82D11D431}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGameTests", "NumberGameTests\NumberGameTests.csproj", "{CE43E9D7-B417-4465-B760-1527AB977B5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMW.NumberGame.Tests", "NumberGameTests\TKMW.NumberGame.Tests.csproj", "{CE43E9D7-B417-4465-B760-1527AB977B5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberGameConsole", "NumberGameConsole\NumberGameConsole.csproj", "{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMW.NumberGame.Console", "NumberGameConsole\TKMW.NumberGame.Console.csproj", "{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

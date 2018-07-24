@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
+using TKMW.NumberGame.NumberProviders;
 
 namespace NewGameTests
 {
@@ -16,7 +17,7 @@ namespace NewGameTests
             bool expectedNext = false;
             bool actualNext = false;
 
-            var np = new NumberGame.NumberProviders.NumberProviderSequential(1, 100, 1, NumberGame.NumberProviders.NumberProviderSequential.countDirections.up);
+            var np = new NumberProviderSequential(1, 100, 1, NumberProviderSequential.countDirections.up);
             for (int i = 0; i < 100; i++) {
                 actualNext = np.Next();
             }
@@ -34,7 +35,7 @@ namespace NewGameTests
             bool expectedNext = false;
             bool actualNext = false;
 
-            var np = new NumberGame.NumberProviders.NumberProviderSequential(1, 100, 1, NumberGame.NumberProviders.NumberProviderSequential.countDirections.up);
+            var np = new NumberProviderSequential(1, 100, 1, NumberProviderSequential.countDirections.up);
             for (int i = 0; i < 101; i++)
             {
                 actualNext = np.Next();
@@ -50,7 +51,7 @@ namespace NewGameTests
         [Test()]
         public void TestStepUp2()
         {
-            var np = new NumberGame.NumberProviders.NumberProviderSequential(1, 100, 2, NumberGame.NumberProviders.NumberProviderSequential.countDirections.up);
+            var np = new NumberProviderSequential(1, 100, 2, NumberProviderSequential.countDirections.up);
 
             var expectedNumber = 3;
 
@@ -68,7 +69,7 @@ namespace NewGameTests
         [Test()]
         public void TestStepDown3()
         {
-            var np = new NumberGame.NumberProviders.NumberProviderSequential(9, 1, 3, NumberGame.NumberProviders.NumberProviderSequential.countDirections.down);
+            var np = new NumberProviderSequential(9, 1, 3, NumberProviderSequential.countDirections.down);
 
             var expectedNumber = 6;
 
