@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8468D834-2387-40E6-945F-464C48DA25A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TKMW.NumberGame.NumberProviders</RootNamespace>
+    <AssemblyName>TKMW.NumberGame.NumberProviders</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <AdditionalParameters></AdditionalParameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>false</DefineTrace>
+    <AdditionalParameters></AdditionalParameters>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="NumberProviderRandom.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NumberGameInterfaces\TKMW.NumberGame.Interfaces.csproj">
+      <Project>{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}</Project>
+      <Name>TKMW.NumberGame.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>
