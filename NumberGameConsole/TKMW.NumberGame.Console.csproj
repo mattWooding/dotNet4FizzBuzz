@@ -71,6 +71,10 @@
       <Project>{3250BD44-5298-4895-A730-B3C82D11D431}</Project>
       <Name>TKMW.NumberGame</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TKMW.NumberGame.NumberProviders\TKMW.NumberGame.NumberProviders.vbproj">
+      <Project>{92865BFC-E14D-4063-8A97-DB08BE072015}</Project>
+      <Name>TKMW.NumberGame.NumberProviders</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

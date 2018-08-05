@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMW.NumberGame.Tests", "Nu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMW.NumberGame.Console", "NumberGameConsole\TKMW.NumberGame.Console.csproj", "{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TKMW.NumberGame.NumberProviders", "TKMW.NumberGame.NumberProviders\TKMW.NumberGame.NumberProviders.vbproj", "{92865BFC-E14D-4063-8A97-DB08BE072015}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C31D3B13-1A52-4257-AAA7-17B98BCEAB8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92865BFC-E14D-4063-8A97-DB08BE072015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92865BFC-E14D-4063-8A97-DB08BE072015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92865BFC-E14D-4063-8A97-DB08BE072015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92865BFC-E14D-4063-8A97-DB08BE072015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

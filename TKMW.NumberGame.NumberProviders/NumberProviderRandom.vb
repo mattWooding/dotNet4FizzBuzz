@@ -5,40 +5,41 @@ Option Strict On
 Imports System
 Imports TKMW.NumberGame.Interfaces
 
-Namespace TKMW.NumberGame.NumberProviders
+Namespace Global.TKMW.NumberGame.NumberProviders
+ 
+    Public Class NumberProviderRandom : implements INumberProvider
 
-    
-    Public Class NumberProviderRandom implements INumberProvider
-
-        private lowestNumber as int
-        private highestNumber as int
-        private howMany as int
-        private currentPosition as int
+        private lowestNumber as Integer
+        private highestNumber as Integer
+        private howMany as Integer
+        private currentPosition as Integer
         private myRandom as Random
 
-    	Public Sub New()
+        Public Sub New()
             Initialize()
-    	End Sub
+        End Sub
 
         Private Sub Initialize() 
             currentPosition = 0
-            myRandom = new Random(System.DateTime.Now.Milliseconds)
+            myRandom = new Random(System.DateTime.Now.Millisecond)
             howMany = myRandom.Next(0, 100)
             lowestNumber = 1
             highestNumber = 100
         End Sub
 
-        Public Function Next() as bool implements Next
-            dim ret as bool = currentPosition < howMany
+        Public Function GetNext() as boolean implements INumberProvider.Next
+            dim ret as boolean = currentPosition < howMany
             currentPosition += 1
             return ret
         End Function
 
-        Public Function TheNumber() as int implements TheNumber
-            return myRandom.Next(lowestNumber, highestNumber)
-        End Function
+        Public ReadOnly Property TheNumber() as Integer implements INumberProvider.TheNumber
+            Get
+                return myRandom.Next(lowestNumber, highestNumber)
+            End Get
+        End Property
 
-        Public Sub Reset() implements Reset
+        Public Sub Reset() implements INumberProvider.Reset
             Initialize()
         End Sub
 

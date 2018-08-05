@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8468D834-2387-40E6-945F-464C48DA25A8}</ProjectGuid>
+    <ProjectGuid>{92865BFC-E14D-4063-8A97-DB08BE072015}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>TKMW.NumberGame.NumberProviders</RootNamespace>
     <AssemblyName>TKMW.NumberGame.NumberProviders</AssemblyName>
@@ -13,9 +13,9 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <OutputPath>bin\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <DefineDebug>true</DefineDebug>
+    <DefineDebug>false</DefineDebug>
     <DefineTrace>false</DefineTrace>
     <AdditionalParameters></AdditionalParameters>
   </PropertyGroup>
@@ -28,13 +28,17 @@
     <AdditionalParameters></AdditionalParameters>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="NumberProviderRandom.vb" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\NumberGameInterfaces\TKMW.NumberGame.Interfaces.csproj">
       <Project>{CBA8F89A-7F07-4E56-BE6F-71B4F8692FA0}</Project>
       <Name>TKMW.NumberGame.Interfaces</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NumberProviderRandom.vb" />
+    <Compile Include="AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
 </Project>
